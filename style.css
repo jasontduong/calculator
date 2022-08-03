@@ -54,7 +54,8 @@ body {
     justify-content: center;
     flex-direction: column;
     flex: 1;
-    gap: 50px;
+    gap: 10px;
+    min-height: 0;
 }
 
 .footer {
@@ -84,7 +85,7 @@ body {
     box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
 }
 
-.calcdisplay {
+.display {
     width: 340px;
     height: 120px;
     background-color: rgb(216, 216, 216);
@@ -96,8 +97,19 @@ body {
     border: 2px solid black;
     padding: 20px;
     box-shadow: inset 2px 3px 10px 0px rgba(0,0,0,0.7);
+    flex-direction: column;
+    overflow: hidden
+    
 }
+.calcdisplay {
+    font-size: 20px;
+}
+.secdisplay {
+    color: var(--clr-bg);
+    font-size: 16px;
+    padding-bottom: 30px;
 
+}
 .calcbuttons {
     width: 340px;
     height: 400px;
@@ -131,14 +143,44 @@ button:hover {
     color: var(--clr-bg);
 
 }
-button#clear, #delete {
+
+button:active {
+    transform: translateY(2px);
+}
+button#reset, #delete {
     width: 164px;
 }
 
-button#clear:hover {
+button#reset:hover {
     background-color: rgb(220, 252, 220);
 }
 
 button#delete:hover {
     background-color: rgb(255, 187, 187);
+}
+
+.butsop:hover {
+    background-color: rgb(179, 224, 255);
+}
+
+.butsfn:hover {
+    background-color: rgb(255, 168, 137);
+}
+
+.prevcalc {
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+    padding: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prevcalcbox {
+    color: black;
+    margin: 0;
+    padding: 5px;
+    min-height: 0;
 }

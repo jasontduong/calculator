@@ -19,32 +19,35 @@
     <header class="header">Calculator</header>
     <div class="main">
         <div class="calcbody">
-            <div class="calcdisplay"> display 112312
-
+            <div class="display">
+                <div class="secdisplay"></div>
+                <div class="calcdisplay">0</div>
             </div>
             <div class="calcbuttons">
-                <button class=buts id=clear>CLEAR</button>
-                <button class=buts id=delete>DELETE</button>
+                <button class=butsfn id=reset>RESET</button>
+                <button class=butsfn id=delete>DELETE</button>
                 <button class=buts value="7">7</button>
                 <button class=buts value="8">8</button>
                 <button class=buts value="9">9</button>
-                <button class=buts value="divide">÷</button>
+                <button class=butsop value="÷">÷</button>
 
                 <button class=buts value="4">4</button>
                 <button class=buts value="5">5</button>
                 <button class=buts value="6">6</button>
-                <button class=buts value="multiply">×</button>
+                <button class=butsop value="×">×</button>
 
                 <button class=buts value="1">1</button>
                 <button class=buts value="2">2</button>
                 <button class=buts value="3">3</button>
-                <button class=buts value="subtract">-</button>
+                <button class=butsop value="-">-</button>
 
-                <button class=buts value="decimal">.</button>
+                <button class=butsfn id=decimal value=".">.</button>
                 <button class=buts value="0">0</button>
-                <button class=buts value="equals">=</button>
-                <button class=buts value="add">+</button>
+                <button class=butsfn id=equals value="=">=</button>
+                <button class=butsop value="+">+</button>
             </div>
+        </div>
+        <div class="prevcalc">
         </div>
     </div>
 
