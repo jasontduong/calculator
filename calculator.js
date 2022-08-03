@@ -35,6 +35,7 @@ function reset() {
     second = ''
     currentOp = null
     resetPrimary = false
+    sumPresent = false
 }
 function add(a, b) {
     return a + b;
@@ -102,6 +103,7 @@ function evaluate() {
 function resetPrimaryDisplay() {
     primaryDisplay.textContent = '';
     resetPrimary = false;
+    sumPresent = false;
 }
 
 function divideByZero() {
@@ -111,6 +113,7 @@ function divideByZero() {
 }
 
 function deleteFn() {
+    if (sumPresent) return
     if (primaryDisplay.textContent.length > 1) {
 const deleted = primaryDisplay.textContent.slice(0, -1);
 primaryDisplay.textContent = deleted;
