@@ -1,0 +1,133 @@
+:root {
+    --clr-hdft: rgba(14, 14, 14, 0.775);
+    --clr-bg: rgb(33, 25, 25);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-bg);
+    color: white;
+    text-align: center;
+}
+
+.fa-github {
+    color: #ddd;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.header {
+    height: 60px;
+    background: var(--clr-hdft);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bolder;
+    font-size: 26px;
+    border-bottom: 1px solid #302f2f0c;
+    flex-shrink: 0.2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    gap: 50px;
+}
+
+.footer {
+    height: 60px;
+    background: var(--clr-hdft);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #302f2f0c;
+    font-size: 16px;
+    gap: 15px;
+}
+
+.calcbody {
+    width: 400px;
+    height: 650px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 25px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 3px solid black;
+}
+
+.calcdisplay {
+    width: 340px;
+    height: 155px;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px solid black;
+}
+
+.calcbuttons {
+    width: 340px;
+    height: 390px;
+    background-color: inherit;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+button {
+    width: 77px;
+    height: 70px;
+    border-radius: 15px;
+    font-family: inherit;
+    color: black;
+    border: 2px solid black;
+    background-color: rgb(216, 216, 216);
+}
+button#clear, #delete {
+    width: 164px;
+}
+
+button#clear {
+    background-color: rgb(220, 252, 220);
+}
+
+button#delete {
+    background-color: rgb(255, 187, 187);
+}
